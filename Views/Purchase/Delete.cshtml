@@ -1,0 +1,60 @@
+﻿@model PurchaseTracker.Models.Purchase
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Is this the purchase you want to remove?</h3>
+<div>
+    <h4>Purchase</h4>
+    <hr />
+
+    <dl class="dl-horizontal">
+        <dt>
+
+            @Html.DisplayNameFor(model => model.Name)
+
+        </dt>
+
+        <dd>
+
+            @Html.DisplayFor(model => model.Name)
+
+        </dd>
+
+        <dt>
+
+            @Html.DisplayNameFor(model => model.Amount)
+
+        </dt>
+
+        <dd>
+
+            @Html.DisplayFor(model => model.Amount)
+
+        </dd>
+
+        <dt>
+
+            @Html.DisplayNameFor(model => model.Zipcode)
+
+        </dt>
+
+        <dd>
+
+            @Html.DisplayFor(model => model.Zipcode)
+
+        </dd>
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <div class="form-actions no-color">
+            <input type="submit" value="Yes" class="btn btn-danger" /> |
+            @Html.ActionLink("No", "Index")
+        </div>
+    }
+</div>
