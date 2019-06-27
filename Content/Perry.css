@@ -1,0 +1,29 @@
+﻿/*This file is overwriting all other css files in my shared "_layout.html" file*/
+body {
+    padding: 0;
+    margin: 0px auto;
+    font-family: 'Raleway', sans-serif;
+    background-color: lightgray;
+}
+/*Navbar*/
+.bg-custom {
+    background-color: #e3f2fd;
+}
+.custom-nav{
+   text-decoration: none;
+   list-style: none;
+}
+/*Body*/
+.jumbotroncustom {
+    height: 80vh;
+    text-align: center;
+    margin: 0px auto;
+    vertical-align: middle;
+}
+/*Footer*/
+.footercustom {
+    background-color: #e3f2fd;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px;
+}
